@@ -32,12 +32,12 @@ public class Pgyer extends CordovaPlugin {
         PgyFeedbackShakeManager.setShakingThreshold(1000);
 
         // 以对话框的形式弹出
-        PgyFeedbackShakeManager.register(MainActivity.this);
+        PgyFeedbackShakeManager.register(cordova.getActivity());
 
         // 以Activity的形式打开，这种情况下必须在AndroidManifest.xml配置FeedbackActivity
         // 打开沉浸式,默认为false
         // FeedbackActivity.setBarImmersive(true);
-        //PgyFeedbackShakeManager.register(MainActivity.this, false);
+        //PgyFeedbackShakeManager.register(cordova.getActivity(), false);
 
     }
 
