@@ -25,7 +25,7 @@ public class Pgyer extends CordovaPlugin {
     }
 
     @Override
-    protected void onResume(boolean multitasking) {
+    public void onResume(boolean multitasking) {
         super.onResume(multitasking);
 
         // 自定义摇一摇的灵敏度，默认为1000，数值越小灵敏度越高。
@@ -42,7 +42,7 @@ public class Pgyer extends CordovaPlugin {
     }
 
     @Override
-    protected void onPause(boolean multitasking) {
+    public void onPause(boolean multitasking) {
         super.onPause(multitasking);
         PgyFeedbackShakeManager.unregister();
     }
