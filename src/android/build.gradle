@@ -1,0 +1,9 @@
+repositories {
+  maven {
+    url 'https://raw.githubusercontent.com/Pgyer/mvn_repo_pgyer/master'
+  }
+}
+
+dependencies {
+    compile 'com.pgyersdk:sdk:2.2.2'
+}
