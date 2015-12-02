@@ -5,5 +5,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.pgyersdk:sdk:2.2.2'
+    compile ('com.pgyersdk:sdk:2.2.2'){
+        exclude module: 'support-v4'
+    }
 }
