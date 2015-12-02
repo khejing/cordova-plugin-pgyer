@@ -8,6 +8,7 @@
     <config-file parent="/*" target="res/xml/config.xml">
     <feature name="Pgyer">
         <param name="android-package" value="com.yang.eto1.CordovaPlugin.Pgyer" />
+        <param name="onload" value="true" />
     </feature>
     </config-file>
 
@@ -20,6 +21,7 @@
       <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
     </config-file>
 
+    <preference name="ANDROID_APP_ID" />
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <meta-data android:name="PGYER_APPID" android:value="$ANDROID_APP_ID" />
     </config-file>
