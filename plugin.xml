@@ -20,6 +20,10 @@
       <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
     </config-file>
 
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <meta-data android:name="PGYER_APPID" android:value="$ANDROID_APP_ID" />
+    </config-file>
+
     <source-file src="src/android/Pgyer.java" target-dir="src/com/yang/eto1/CordovaPlugin/Pgyer" />
     
     <framework src="src/android/build.gradle" custom="true" type="gradleReference"></framework>
