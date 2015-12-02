@@ -21,7 +21,7 @@
     </config-file>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <meta-data android:name="PGYER_APPID" android:value="$TEST" />
+      <meta-data android:name="PGYER_APPID" android:value="$PACKAGE_NAME" />
     </config-file>
 
     <source-file src="src/android/Pgyer.java" target-dir="src/com/yang/eto1/CordovaPlugin/Pgyer" />
