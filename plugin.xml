@@ -23,6 +23,7 @@
 
     <preference name="ANDROID_APP_ID" />
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <activity android:name="com.pgyersdk.activity.FeedbackActivity" />
       <meta-data android:name="PGYER_APPID" android:value="$ANDROID_APP_ID" />
     </config-file>
 
